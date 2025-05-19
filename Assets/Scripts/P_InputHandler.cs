@@ -7,13 +7,13 @@ public class P_InputHandler : MonoBehaviour
     Vector3 moveDir;
     Animator anim;
     Rigidbody rb;
-    P_Stat pStat;
+    Character pStat;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
-        pStat = GetComponent<P_Stat>();
+        pStat = GetComponent<Character>();
     }
     private void FixedUpdate()
     {
