@@ -35,9 +35,9 @@ public class P_InputHandler : MonoBehaviour
 
     void Helper_SetMoveDir()
     { 
-        moveDir.x = moveInput.x * pStat.Base_MoveSpeed;
+        moveDir.x = moveInput.x * pStat.Cur_MoveSpeed;
         moveDir.y = rb.linearVelocity.y;
-        moveDir.z = moveInput.y * pStat.Base_MoveSpeed;
+        moveDir.z = moveInput.y * pStat.Cur_MoveSpeed;
     }
 
     void OnMove(InputValue value)
